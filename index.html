@@ -13,10 +13,6 @@
 		margin:auto;
 		width:50%
 	}
-	.div_center {
-		margin:auto;
-		width:50%
-	}
 	p {
 		color: white;
 	}
@@ -24,24 +20,25 @@
 		text-align:center;
 	}
 	div.crop {
-		overflow: hidden;
+		overflow: clip;
 	}
-	#crop_se {
+	.crop_se {
 		margin-top: -55%;
 		margin-left: -50%;
 	}
-	#crop_ne {
+	.crop_ne {
 		margin-left: -50%;
 		margin-bottom: -47%;
 	}
-	#crop_nw {
+	.crop_nw {
 		margin-bottom:-47%;
 		margin-left:50%;
 	}
-	#crop_sw {
+	.crop_sw {
 		margin-top:-55%;
 		margin-left:50%;
 	}
+	.crop img { object-fit: contain; height:100%; width: 100%}
 </style>
 </head>
 
@@ -94,13 +91,13 @@
 			<br>k
 		</td>
 		<td>
-			<div class="crop">
-				<img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72cc0addbc7d86b2e0af0c607ec" alt="Miles" id="crop_nw">
+			<div class="crop" class="crop_nw">
+				<img src="champy.jpg" alt="champy-nw" class="crop_nw">
 			</div>
 		</td>
 		<td>
-			<div class="crop">
-				<img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72cc0addbc7d86b2e0af0c607ec" alt="Miles" id="crop_ne">
+			<div class="crop" class="crop_ne">
+				<img src="champy.jpg" alt="champy-ne" class="crop_ne">
 			</div>
 		</td>
 	</tr>	
@@ -119,13 +116,13 @@
 			<br>d
 		</td>
 		<td>
-			<div class="crop">
-				<img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72cc0addbc7d86b2e0af0c607ec" alt="Miles" id="crop_sw">
+			<div class="crop" class="crop_sw">
+				<img src="champy.jpg" alt="champy-sw" class="crop_sw">
 			</div>
 		</td>
 		<td>
-			<div class="crop">
-				<img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72cc0addbc7d86b2e0af0c607ec" alt="Miles" id="crop_se">
+			<div class="crop" class="crop_se">
+				<img src="champy.jpg" alt="champy-se" class="crop_se">
 			</div>
 		</td>
 	</tr>
