@@ -19,26 +19,7 @@
 	p.ctr {
 		text-align:center;
 	}
-	div.crop {
-		overflow: clip;
-	}
-	.crop_se {
-		margin-top: -55%;
-		margin-left: -50%;
-	}
-	.crop_ne {
-		margin-left: -50%;
-		margin-bottom: -47%;
-	}
-	.crop_nw {
-		margin-bottom:-47%;
-		margin-left:50%;
-	}
-	.crop_sw {
-		margin-top:-55%;
-		margin-left:50%;
-	}
-	.crop img { object-fit: contain; height:100%; width: 100%}
+	.fit_to_screen img { object-fit: contain; height:100%; max-width: 80%}
 </style>
 </head>
 
@@ -91,13 +72,13 @@
 			<br>k
 		</td>
 		<td>
-			<div class="crop" class="crop_nw">
-				<img src="champy.jpg" alt="champy-nw" class="crop_nw">
+			<div class="fit_to_screen">
+				<img src="champy_nw.jpg" alt="champy-nw">
 			</div>
 		</td>
 		<td>
-			<div class="crop" class="crop_ne">
-				<img src="champy.jpg" alt="champy-ne" class="crop_ne">
+			<div class="fit_to_screen">
+				<img src="champy_ne.jpg" alt="champy-ne">
 			</div>
 		</td>
 	</tr>	
@@ -116,13 +97,13 @@
 			<br>d
 		</td>
 		<td>
-			<div class="crop" class="crop_sw">
-				<img src="champy.jpg" alt="champy-sw" class="crop_sw">
+			<div class="fit_to_screen">
+				<img src="champy_sw.jpg" alt="champy-sw">
 			</div>
 		</td>
 		<td>
-			<div class="crop" class="crop_se">
-				<img src="champy.jpg" alt="champy-se" class="crop_se">
+			<div class="fit_to_screen">
+				<img src="champy_se.jpg" alt="champy-se">
 			</div>
 		</td>
 	</tr>
