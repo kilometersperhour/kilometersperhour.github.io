@@ -23,22 +23,40 @@
 	p.ctr {
 		text-align:center;
 	}
+	div.crop {
+		overflow: hidden;
+	}
+	#crop_se {
+		margin-top: -55%;
+		margin-left: -50%;
+	}
+	#crop_ne {
+		margin-left: -50%;
+		margin-bottom: -47%;
+	}
+	#crop_nw {
+		margin-bottom:-47%;
+		margin-left:50%;
+	}
+	#crop_sw {
+		margin-top:-55%;
+		margin-left:50%;
+	}
 </style>
 </head>
 
 <body>
 <p>
-<a href="http://192.168.0.205:8000">draft page</a> || <a href="https://kmhr.dev" style: >live page</a>
+<a href="http://192.168.0.205:8000">draft page</a> || <a href="https://kmhr.dev">live page</a>
 </p>
 <h1>hi :)</h1>
 
 <img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72cc0addbc7d86b2e0af0c607ec" alt="Champy playlist" class="img_center">
 
-<table class=div_center class=text_white>
+<table class="div_center" class="text_white">
 <!--table: champy roast section -->
 	<tr>
 	<!--row 1: slander -->
-	</tr>
 		<td>
 			<p>
 			This
@@ -58,6 +76,7 @@
 				monotone font
 			</p>
 		</td>
+	</tr>
 	<tr>
 	<!--row 2-->
 		<td>
@@ -74,8 +93,16 @@
 			<br>c
 			<br>k
 		</td>
-		<td><img src="https://minecraft.wiki/images/Oak_Leaves.png?80d73" alt="Miles" max-width=></td>
-		<td><img src="https://minecraft.wiki/images/Oak_Leaves.png?80d73" alt="Miles" max-width=></td>
+		<td>
+			<div class="crop">
+				<img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72cc0addbc7d86b2e0af0c607ec" alt="Miles" id="crop_nw">
+			</div>
+		</td>
+		<td>
+			<div class="crop">
+				<img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72cc0addbc7d86b2e0af0c607ec" alt="Miles" id="crop_ne">
+			</div>
+		</td>
 	</tr>	
 	<tr>
 	<!--row 3 -->
@@ -91,8 +118,16 @@
 			<br>a
 			<br>d
 		</td>
-		<td><img src="https://minecraft.wiki/images/Oak_Leaves.png?80d73" alt="Miles" max-width=></td>
-		<td><img src="https://minecraft.wiki/images/Oak_Leaves.png?80d73" alt="Miles" max-width=></td>
+		<td>
+			<div class="crop">
+				<img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72cc0addbc7d86b2e0af0c607ec" alt="Miles" id="crop_sw">
+			</div>
+		</td>
+		<td>
+			<div class="crop">
+				<img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72cc0addbc7d86b2e0af0c607ec" alt="Miles" id="crop_se">
+			</div>
+		</td>
 	</tr>
 </table>
 </body>
