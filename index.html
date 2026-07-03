@@ -23,19 +23,61 @@
 		text-align:center;
 	}
 	.fit_to_screen img { object-fit: contain; height:100%; max-width: 80%}
+
+	table, th, td {
+  		border: 1px solid black;
+  	}
 </style>
+<script>
+	function spinnerSpin() {
+		const spinnerCellsIdsBackup = ["spinnerSlot_01","spinnerSlot_02","spinnerSlot_03","spinnerSlot_04","spinnerSlot_05","spinnerSlot_06"];
+		const spinnerCellsIds = ["spinnerSlot_00_header"];
+		let myvariable = randomUUID()
+		document.getElementById("spinnerSlot_00_header").innerHTML = myvariable;
+		
+	}
+</script>
 </head>
 
 <body>
 <p>
 <!-- quick links for development -->
-<a href="http://192.168.0.205:8000">draft page</a> || <a href="https://kmhr.dev">live page</a> || <a style="color:red" href="https://kmhr.dev/strobing.gif">danger!_flashing_lights</a>
+<a href="http://192.168.0.188:8000">draft page</a> || <a href="https://kmhr.dev">live page</a> || <a style="color:red" href="https://kmhr.dev/strobing.gif">danger!_flashing_lights</a>
 </p>
 <h1>Welcome!</h1>
 
 <img src="plasma.png" alt="Centered image" class="img_center">
 
-
+<!--spinner-->
+<div>
+	<table id="spinnerTable">	
+			<tr>
+				<td id="spinnerSlot_00_header">
+					<button type="button" onclick="spinnerSpin()">
+						Press to spin!
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td id="spinnerSlot_01">Devin</td>
+			</tr>
+			<tr>
+				<td id="spinnerSlot_02">Adam</td>
+			</tr>
+			<tr>
+				<td id="spinnerSlot_03">Liam</td>
+			</tr>
+			<tr>
+				<td id="spinnerSlot_04">Aidan</td>
+			</tr>
+			<tr>
+				<td id="spinnerSlot_05">Matthias</td>
+			</tr>
+			<tr>
+				<td id="spinnerSlot_06">Miles</td>
+			</tr>
+	</table>
+</div>
 
 </body>
 
